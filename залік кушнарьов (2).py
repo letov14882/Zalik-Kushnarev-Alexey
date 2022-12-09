@@ -2,7 +2,7 @@
 #Необхідно розробити застосунок, що виведе кількість слів і символів для
 #кожного рядку тексту з текстового файлу.
 from tkinter import Tk
-from tkinter.filedialog import askopenfile
+from tkinter.filedialog import askopenfile #з графічного модулю імпорт для відкриття вікна
 
 def readtext():
     abc = askopenfile()
