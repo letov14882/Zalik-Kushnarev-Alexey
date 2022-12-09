@@ -7,24 +7,24 @@ from tkinter.filedialog import askopenfile #з графічного модулю
 def readtext():
     abc = askopenfile()
     abc1 = abc.readlines()
-    return abc1
+    return abc1             #фукнція для створення змінної, що відкриває і читає файл
 text = readtext()
-textstr = ''.join(text)
+textstr = ''.join(text)     #перевід змінної з листа до строки
 
 print("Ваш текст:")
 print(textstr)
-print("")
+print("")                   #відображення тексту, що обрали
 
 
 print("Кількість символів у рядках тексту:")
 for line in text:
-    print(len(line.rstrip('\n').replace(" ", "")))
+    print(len(line.rstrip('\n').replace(" ", ""))) #відображення символів
    
-print("")
+print("")   
 a =''
 b=''
 print("Кількість слів у рядках тексту")
 for word in text:
     a =str((len(word.split(' '))))
     b = str(a.rstrip('\n'))
-    print(str(b))
+    print(str(b))                       #відображення кількості слів
